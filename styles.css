@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.poster {
+  position: relative;
+  width: 600px;
+  height: 850px;
+  border: 1px solid #ccc;
+  display: flex;
+}
+
+.left-section {
+  width: 70%;
+}
+
+.color-blocks {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 3fr 2fr;
+  height: 50%;
+}
+
+.color-blocks .blue {
+  background-color: #006eb3;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.color-blocks .yellow {
+  background-color: #fac524;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.color-blocks .red {
+  background-color: #941100;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.left-section .text {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  color: #000;
+  line-height: 1.5;
+  margin: 25% 0 0 5%;
+}
+
+.right-section {
+  width: 30%;
+  background-color: #000;
+  color: #fff;
+}
+
+.right-section .content-block {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding-left: 5px;
+}
+
+.right-section .content-block:first-child {
+  border-bottom: none;
+  margin-top: 550px;
+}
+
+.right-section .content-block:last-child {
+  border-top: none;
+  border-bottom: none;
+}
+
+.right-section .content-block .text {
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  padding: 10px 0 5px 0;
+}
+
+.right-section .content-block .text.small {
+  font-size: 6px;
+  position: absolute;
+  bottom: 5px;
+}
